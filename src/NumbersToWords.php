@@ -15,6 +15,8 @@
 
         function convertToWords($numberInput)
         {
+            $digitMap4 = array('0'=>'', '1'=>'one thousand', '2'=>'two thousand', '3'=>'three thousand', '4'=>'four thousand', '5'=>'five thousand', '6'=>'six thousand', '7'=>'seven thousand', '8'=>'eight thousand', '9'=>'nine thousand');
+
             $digitMap3 = array('0'=>'', '1'=>'one hundred', '2'=>'two hundred', '3'=>'three hundred', '4'=>'four hundred', '5'=>'five hundred', '6'=>'six hundred', '7'=>'seven hundred', '8'=>'eight hundred', '9'=>'nine hundred');
 
             $digitMap2 = array('0'=>'', '1'=>'ten', '2'=>'twenty', '3'=>'thirty', '4'=>'forty', '5'=>'fifty', '6'=>'sixty', '7'=>'seventy', '8'=>'eighty', '9'=>'ninety');
@@ -40,7 +42,10 @@
                     // }
                 } elseif ($sizeofArray == 3 ) {
                     $wordOutput = $wordOutput . $digitMap3[$numberInputSplit[0]] . " " . $digitMap2[$numberInputSplit[1]] . " " . $digitMap1[$numberInputSplit[2]];
-                    
+
+                } elseif ($sizeofArray == 4 ) {
+                    $wordOutput = $wordOutput . $digitMap4[$numberInputSplit[0]] . " " . $digitMap3[$numberInputSplit[1]] . " " . $digitMap2[$numberInputSplit[2]] . " " . $digitMap1[$numberInputSplit[3]];
+
                 } else {
                     return false;
                 }
