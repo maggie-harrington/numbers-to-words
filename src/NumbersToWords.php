@@ -46,9 +46,9 @@
 
                 } elseif ($sizeofArray == 2 ) {
 
-                    // for ($i = 0; $i < $sizeofArray; $i++) {
+
                     $wordOutput = $wordOutput . $digitMap2[$numberInputSplit[0]] . " " . $digitMap1[$numberInputSplit[1]];
-                    // }
+                    
                 } elseif ($sizeofArray == 3 ) {
                     $wordOutput = $wordOutput . $digitMap3[$numberInputSplit[0]] . " " . $digitMap2[$numberInputSplit[1]] . " " . $digitMap1[$numberInputSplit[2]];
 

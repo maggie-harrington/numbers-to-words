@@ -107,5 +107,18 @@ class NumbersToWordsTest extends PHPUnit_Framework_TestCase
         $this->assertEquals('zero', $result);
     }
 
+    function test9CheckConvertToWords()
+    {
+        // Arrange
+        $testNumber = '214';
+        $testNumbersToWords = new NumbersToWords($testNumber);
+
+        // Act
+        $result = $testNumbersToWords->convertToWords($testNumber);
+
+        // Assert
+        $this->assertEquals('two hundred fourteen', $result);
+    }
+
 }
 ?>

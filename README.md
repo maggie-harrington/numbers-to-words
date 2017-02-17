@@ -32,11 +32,12 @@ Copyright (c) 2017 Maggie Harrington
 
 | Test cases for convertToWords()  | Input    | Output  |
 |----------------------------------|----------|---------|
-| 1: Number has 1 digit  | 2       | two |
-| 2: Number has 2 digits | 22      | twenty two |
-| 3: Number has 3 digits | 222     | two hundred twenty two |
-| 4: Number has 4 digits | 2222    | two thousand two hundred twenty two |
-| 5: Number has 5 digits | 22222   | twenty two thousand two hundred twenty two |
-| 6: Number has 6 digits | 222222  | two hundred twenty two thousand two hundred twenty two |
-| 7: Number has 7 digits | 2222222 | two million two hundred twenty two thousand two hundred twenty two |
-| 8: Number is zero      | 0       | zero |
+| 1: Number has 1 digit            | 2        | two |
+| 2: Number has 2 digits           | 22       | twenty two |
+| 3: Number has 3 digits           | 222      | two hundred twenty two |
+| 4: Number has 4 digits           | 2222     | two thousand two hundred twenty two |
+| 5: Number has 5 digits           | 22222    | twenty two thousand two hundred twenty two |
+| 6: Number has 6 digits           | 222222   | two hundred twenty two thousand two hundred twenty two |
+| 7: Number has 7 digits           | 2222222  | two million two hundred twenty two thousand two hundred twenty two |
+| 8: Number is zero                | 0        | zero |
+| 9: Number contains a "teen"      | 214      | two hundred fourteen |
