@@ -1,7 +1,19 @@
 <?php
-    class NumbersToWords {
+    class NumbersToWords
+    {
+        private $userInput;
 
-        function convertToWords()
+        function __construct($numberInput)
+        {
+            $this->userInput = $numberInput;
+        }
+
+        function getUserInput()
+        {
+            return $this->userInput;
+        }
+
+        function convertToWords($numberInput)
         {
             
         }

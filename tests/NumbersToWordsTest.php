@@ -10,7 +10,7 @@ class NumbersToWordsTest extends PHPUnit_Framework_TestCase
         $testNumbersToWords = new NumbersToWords($testNumber);
 
         // Act
-        $result = $testNumbersToWords->convertToWords($testWord);
+        $result = $testNumbersToWords->convertToWords($testNumber);
 
         // Assert
         $this->assertEquals('two', $result);
@@ -23,7 +23,7 @@ class NumbersToWordsTest extends PHPUnit_Framework_TestCase
         $testNumbersToWords = new NumbersToWords($testNumber);
 
         // Act
-        $result = $testNumbersToWords->convertToWords($testWord);
+        $result = $testNumbersToWords->convertToWords($testNumber);
 
         // Assert
         $this->assertEquals('twenty two', $result);
@@ -36,7 +36,7 @@ class NumbersToWordsTest extends PHPUnit_Framework_TestCase
         $testNumbersToWords = new NumbersToWords($testNumber);
 
         // Act
-        $result = $testNumbersToWords->convertToWords($testWord);
+        $result = $testNumbersToWords->convertToWords($testNumber);
 
         // Assert
         $this->assertEquals('two hundred twenty two', $result);
@@ -49,7 +49,7 @@ class NumbersToWordsTest extends PHPUnit_Framework_TestCase
         $testNumbersToWords = new NumbersToWords($testNumber);
 
         // Act
-        $result = $testNumbersToWords->convertToWords($testWord);
+        $result = $testNumbersToWords->convertToWords($testNumber);
 
         // Assert
         $this->assertEquals('two thousand two hundred twenty two', $result);
@@ -62,7 +62,7 @@ class NumbersToWordsTest extends PHPUnit_Framework_TestCase
         $testNumbersToWords = new NumbersToWords($testNumber);
 
         // Act
-        $result = $testNumbersToWords->convertToWords($testWord);
+        $result = $testNumbersToWords->convertToWords($testNumber);
 
         // Assert
         $this->assertEquals('twenty two thousand two hundred twenty two', $result);
@@ -75,7 +75,7 @@ class NumbersToWordsTest extends PHPUnit_Framework_TestCase
         $testNumbersToWords = new NumbersToWords($testNumber);
 
         // Act
-        $result = $testNumbersToWords->convertToWords($testWord);
+        $result = $testNumbersToWords->convertToWords($testNumber);
 
         // Assert
         $this->assertEquals('two hundred twenty two thousand two hundred twenty two', $result);
@@ -88,7 +88,7 @@ class NumbersToWordsTest extends PHPUnit_Framework_TestCase
         $testNumbersToWords = new NumbersToWords($testNumber);
 
         // Act
-        $result = $testNumbersToWords->convertToWords($testWord);
+        $result = $testNumbersToWords->convertToWords($testNumber);
 
         // Assert
         $this->assertEquals('two million two hundred twenty two thousand two hundred', $result);
