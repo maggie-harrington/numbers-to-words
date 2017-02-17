@@ -15,7 +15,8 @@
 
         function convertToWords($numberInput)
         {
-            
+            $wordOutput = 'two';
+            return $wordOutput;
         }
     }
 ?>
