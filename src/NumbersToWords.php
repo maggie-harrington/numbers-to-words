@@ -28,6 +28,8 @@
             // array created from user input number, split by digits
             $numberInputSplit = str_split($numberInput);
 
+
+
             $wordOutput = "";
             $sizeofArray = sizeof($numberInputSplit);
             var_dump($sizeofArray);

@@ -94,5 +94,18 @@ class NumbersToWordsTest extends PHPUnit_Framework_TestCase
         $this->assertEquals('two million two hundred twenty two thousand two hundred twenty two', $result);
     }
 
+    function test8CheckConvertToWords()
+    {
+        // Arrange
+        $testNumber = '0';
+        $testNumbersToWords = new NumbersToWords($testNumber);
+
+        // Act
+        $result = $testNumbersToWords->convertToWords($testNumber);
+
+        // Assert
+        $this->assertEquals('zero', $result);
+    }
+
 }
 ?>

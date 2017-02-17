@@ -39,3 +39,4 @@ Copyright (c) 2017 Maggie Harrington
 | 5: Number has 5 digits | 22222   | twenty two thousand two hundred twenty two |
 | 6: Number has 6 digits | 222222  | two hundred twenty two thousand two hundred twenty two |
 | 7: Number has 7 digits | 2222222 | two million two hundred twenty two thousand two hundred twenty two |
+| 8: Number is zero      | 0       | zero |
