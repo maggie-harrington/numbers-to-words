@@ -15,7 +15,7 @@
 
         function convertToWords($numberInput)
         {
-
+            $digitMap5 = array('0'=>'million', '1'=>'one million', '2'=>'two million', '3'=>'three million', '4'=>'four million', '5'=>'five million', '6'=>'six million', '7'=>'seven million', '8'=>'eight million', '9'=>'nine million');
 
             $digitMap4 = array('0'=>'thousand', '1'=>'one thousand', '2'=>'two thousand', '3'=>'three thousand', '4'=>'four thousand', '5'=>'five thousand', '6'=>'six thousand', '7'=>'seven thousand', '8'=>'eight thousand', '9'=>'nine thousand');
 
@@ -54,8 +54,11 @@
                 } elseif ($sizeofArray == 6 ) {
                     $wordOutput = $wordOutput . $digitMap3[$numberInputSplit[0]] . " " . $digitMap2[$numberInputSplit[1]] . " " . $digitMap4[$numberInputSplit[2]] . " " . $digitMap3[$numberInputSplit[3]] . " " . $digitMap2[$numberInputSplit[4]] . " " . $digitMap1[$numberInputSplit[5]];
 
+                } elseif ($sizeofArray == 7 ) {
+                    $wordOutput = $wordOutput . $digitMap5[$numberInputSplit[0]] . " " . $digitMap3[$numberInputSplit[1]] . " " . $digitMap2[$numberInputSplit[2]] . " " . $digitMap4[$numberInputSplit[3]] . " " . $digitMap3[$numberInputSplit[4]] . " " . $digitMap2[$numberInputSplit[5]] . " " . $digitMap1[$numberInputSplit[6]];
+
                 } else {
-                    return false;
+                    return "Sorry, I can't count that high yet.";
                 }
 
             // }
