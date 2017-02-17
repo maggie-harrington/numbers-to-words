@@ -15,5 +15,11 @@
         return $app['twig']->render('home.html.twig');
     });
 
+    $app->post("/results", function() use ($app) {
+        $newNumber = new NumbersToWords($_POST['input-number']);
+        $newConversion = $newNumber->convertToWords($_POST['input-number']);
+        return $app['twig']->render('results.html.twig', array('new_array' => $newConversion));
+    });
+
     return $app;
 ?>
