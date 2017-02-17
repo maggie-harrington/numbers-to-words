@@ -36,7 +36,12 @@
             // for ($i = sizeof($numberInputSplit); $i > 0; $i--) {
                 if ($sizeofArray == 1 ) {
                     // var_dump($wordOutput);
-                    $wordOutput .= $digitMap1[$numberInputSplit[0]];
+                    var_dump($digitMap1[$numberInputSplit[0]]);
+                    if ($numberInputSplit[0] == '0') {
+                        $wordOutput .= 'zero';
+                    } else {
+                        $wordOutput .= $digitMap1[$numberInputSplit[0]];
+                    }
                     // $wordOutput .= $digitMap1[$numberInput];
 
                 } elseif ($sizeofArray == 2 ) {
